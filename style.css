@@ -253,3 +253,164 @@ transform:translateY(-40px);
 }
 
 }
+ /* Moving clouds */
+
+.cloud{
+    position:fixed;
+    top:60px;
+    left:-200px;
+    font-size:70px;
+    animation:cloudMove 18s linear infinite;
+    opacity:.8;
+    z-index:-1;
+}
+
+@keyframes cloudMove{
+    from{
+        transform:translateX(-200px);
+    }
+    to{
+        transform:translateX(120vw);
+    }
+}
+
+
+/* Floating hearts */
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:35px;
+    animation:heartFloat 8s linear infinite;
+}
+
+
+@keyframes heartFloat{
+
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
+
+
+
+/* Bee animation */
+
+.bee{
+    position:fixed;
+    font-size:35px;
+    animation:beeFly 10s infinite;
+}
+
+
+@keyframes beeFly{
+
+0%{
+left:-50px;
+top:20%;
+}
+
+50%{
+left:50%;
+top:40%;
+}
+
+100%{
+left:110%;
+top:15%;
+}
+
+}
+
+
+
+/* Flower movement */
+
+.flower{
+    display:inline-block;
+    animation:sway 3s infinite ease-in-out;
+}
+
+
+@keyframes sway{
+
+0%,100%{
+transform:rotate(-8deg);
+}
+
+50%{
+transform:rotate(8deg);
+}
+
+}
+
+
+
+/* Luxury glow */
+
+.card{
+
+border:2px solid rgba(255,215,150,.5);
+
+animation:luxuryGlow 3s infinite;
+
+}
+
+
+@keyframes luxuryGlow{
+
+50%{
+box-shadow:
+0 0 40px #ffd6e7,
+0 0 70px #fff1a8;
+}
+
+}
+
+
+
+/* Gift bounce */
+
+.gift{
+
+animation:
+shake 1.5s infinite,
+bounce 3s infinite;
+
+}
+
+
+@keyframes bounce{
+
+50%{
+transform:translateY(-20px);
+}
+
+}
+
+
+
+/* Sparkle effect */
+
+.sparkle{
+
+animation:sparkle 2s infinite;
+
+}
+
+
+@keyframes sparkle{
+
+50%{
+opacity:.4;
+transform:scale(1.3);
+}
+
+}
