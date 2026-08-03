@@ -438,3 +438,13 @@ animation:float 4s infinite;
 width:80px;
 animation:sway 3s infinite;
 }
+calendar.png
+body{
+    background-color:#fff8f2;
+    background-image:
+    url("calendar.png"),
+    radial-gradient(#ffd6e5 2px, transparent 2px),
+    radial-gradient(#fff0a8 2px, transparent 2px);
+    background-size:120px 120px, 35px 35px, 50px 50px;
+    background-position:center;
+}
