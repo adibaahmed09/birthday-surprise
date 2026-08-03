@@ -14,25 +14,25 @@ const pages = [
 
 const questions = [
 
-"আমাদের প্রথম দেখা কবে হয়েছিল? ❤️",
+"♡ Do you remember the first moment we met?",
 
-"আমার কোন জিনিসটা তোমার সবচেয়ে বেশি ভালো লাগে? 💕",
+"♡ What is the one thing you love the most about me?",
 
-"আমাদের সবচেয়ে সুন্দর memory কোনটা? ✨",
+"♡ What is your favorite memory with me?",
 
-"আমার জন্য তোমার সবচেয়ে বড় wish কী? 💖",
+"♡ When did you first realize that I was special to you?",
 
-"আমাকে প্রথম দেখে তোমার কী মনে হয়েছিল? 🌸",
+"♡ What little thing about me makes you smile the most?",
 
-"আমার কোন habit তোমার favourite? 🥰",
+"♡ What is your biggest dream for our future together?",
 
-"আমাদের future নিয়ে তোমার dream কী? 💍",
+"♡ What is one thing I do that always makes you happy?",
 
-"আমার কোন কথা তোমাকে সবচেয়ে বেশি হাসায়? 😊",
+"♡ What is one thing about us that you never want to forget?",
 
-"আমার সাথে কোন জায়গায় যেতে চাও? ✈️",
+"♡ If we could travel anywhere together, where would you choose?",
 
-"আমাকে এক কথায় describe করলে কী বলবে? ❤️"
+"♡ Do you love me?"
 
 ];
 
