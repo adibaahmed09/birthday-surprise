@@ -414,3 +414,27 @@ transform:scale(1.3);
 }
 
 }
+.cloud-img img{
+width:180px;
+animation:cloudMove 15s linear infinite;
+}
+
+.bee-img img{
+width:50px;
+animation:beeFly 8s infinite;
+}
+
+.teddy img{
+width:150px;
+animation:bounce 3s infinite;
+}
+
+.couple img{
+width:220px;
+animation:float 4s infinite;
+}
+
+.flower img{
+width:80px;
+animation:sway 3s infinite;
+}
