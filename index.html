@@ -1,170 +1,201 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Happy Birthday My Love ❤️</title>
+<title>Happy Birthday My Love 💖</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- PASSWORD PAGE -->
-<div id="lock" class="password-page">
+<div class="background">
 
-<div class="box">
-<h1>🔐 Secret Surprise</h1>
+<!-- PASSWORD PAGE -->
+
+<section id="passwordPage" class="page active">
+
+<div class="card">
+
+<h1>🔐 A Secret Surprise</h1>
+
 <p>Only for you ❤️</p>
 
-<input id="password" type="password" placeholder="Enter Password">
+<input id="passwordInput" type="password" placeholder="Enter Password">
 
-<button onclick="unlock()">Open Gift 💖</button>
-
-</div>
+<button onclick="checkPassword()">Open Surprise ✨</button>
 
 </div>
 
-
-<!-- MAIN PAGE -->
-<div id="content" style="display:none;">
+</section>
 
 
-<div class="clouds">
-☁️ ☁️ ☁️ ☁️
+
+<!-- WELCOME PAGE -->
+
+<section id="welcomePage" class="page">
+
+<div class="card">
+
+<h1>Welcome My Love 💖</h1>
+
+<p>Are you excited for your surprise? ✨</p>
+
+<button onclick="startQuestions()">YES 💕</button>
+
+<button onclick="noExcited()">NO 😭</button>
+
+<p id="reaction"></p>
+
 </div>
 
+</section>
 
-<div class="hearts">
-❤️ 💕 💗 💖
+
+
+<!-- QUESTIONS -->
+
+<section id="questionPage" class="page">
+
+<div class="card">
+
+<h1 id="questionNumber"></h1>
+
+<p id="questionText"></p>
+
+<input id="answerInput" placeholder="Write your answer ❤️">
+
+<button onclick="nextQuestion()">Next 💗</button>
+
 </div>
 
+</section>
 
-<h1>
+
+
+
+<!-- PHOTO SECTION -->
+
+<section id="photoPage" class="page">
+
+<div class="card">
+
+<h1>Our Memories 📸</h1>
+
+<p>Add your favourite photos here 💕</p>
+
+<div class="photos">
+
+<img src="" alt="Your Photo">
+
+<img src="" alt="Your Photo">
+
+</div>
+
+<button onclick="openLetter()">Continue 💌</button>
+
+</div>
+
+</section>
+
+
+
+
+<!-- LETTER -->
+
+<section id="letterPage" class="page">
+
+<div class="card">
+
+<h1>💌 Let's Open Your Letter</h1>
+
+<button onclick="showLetter()">Open Envelope 💖</button>
+
+
+<div id="letter" style="display:none;">
+
+<p>
+
 Happy Birthday My Love ❤️
-</h1>
-
-
-<div class="couple">
-🐰 💕 🐻
-</div>
-
-
-<div class="flowers">
-🌸 🌷 🌸 🌷
-</div>
-
-
-<h2>🎂 A Special Message For You</h2>
-
-
-<div class="letter">
-
-My Love ❤️
 
 <br><br>
 
-Happy Birthday to the most special person in my life.
+You are one of the most special people in my life.
 
-Today is not just your birthday, it is a day to celebrate the person who brings happiness, comfort and beautiful moments into my life.
+Thank you for all the beautiful memories, smiles and happiness.
 
-Thank you for being there, for making me smile, and for creating so many precious memories with me.
+I hope your life is always filled with love, success and endless happiness.
 
-I hope your life is always filled with happiness, success and endless love.
+You deserve all the beautiful things in the world.
 
-You deserve all the beautiful things in this world.
+❤️❤️❤️
 
-I am so lucky to have you. ❤️
-
-<br><br>
-
-With lots of love 💕
+</p>
 
 </div>
 
 
-
-<h2>❓ Little Questions For You</h2>
-
-
-<div class="questions">
-
-<p>1. When did you start loving me? ❤️</p>
-
-<p>2. What is your favourite memory with me?</p>
-
-<p>3. What is the first thing you noticed about me?</p>
-
-<p>4. What makes you happiest?</p>
-
-<p>5. What is one dream you want us to complete together?</p>
-
-<p>6. What is your favourite thing about me?</p>
-
-<p>7. Which moment with me can you never forget?</p>
-
-<p>8. What nickname do you love the most?</p>
-
-<p>9. Where do you want to travel with me?</p>
-
-<p>10. How much do you love me? 💕</p>
-
-</div>
-
-
-
-<h2>🎥 Our Surprise Video</h2>
-
-<div class="video-box">
-
-<!-- Add video here later -->
-
-🎬 Your special video will be here ❤️
-
-</div>
-
-
-
-
-<h2>🎁 Final Surprise</h2>
-
-
-<div class="surprise">
-
-🎂✨🎉  
-<br>
-I Love You Forever ❤️
-
-</div>
-
+<button onclick="openGift()">See Your Gift 🎁</button>
 
 
 </div>
 
+</section>
 
 
-<script>
-
-function unlock(){
-
-let pass=document.getElementById("password").value;
 
 
-if(pass=="01012023"){
+<!-- GIFT -->
 
-document.getElementById("lock").style.display="none";
+<section id="giftPage" class="page">
 
-document.getElementById("content").style.display="block";
+<div class="card">
 
-}
+<h1>🎁 Your Surprise Gift</h1>
 
-else{
+<div class="gift">
 
-alert("Wrong Password 💔");
+🎁
 
-}
+</div>
 
-}
+<p>Click the gift to open 💖</p>
 
-</script>
 
+<button onclick="showVideo()">Open Gift ✨</button>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- VIDEO -->
+
+<section id="videoPage" class="page">
+
+<div class="card">
+
+<h1>🎥 Our Special Video</h1>
+
+<div class="videoBox">
+
+Your video will be here ❤️
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
