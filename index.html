@@ -1,14 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Happy Birthday ❤️</title>
-    <link rel="stylesheet" href="style.css">
+<title>Happy Birthday My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Happy Birthday My Love ❤️</h1>
+<!-- PASSWORD PAGE -->
+<div id="lock" class="password-page">
 
-<script src="script.js"></script>
+<div class="box">
+<h1>🔐 Secret Surprise</h1>
+<p>Only for you ❤️</p>
+
+<input id="password" type="password" placeholder="Enter Password">
+
+<button onclick="unlock()">Open Gift 💖</button>
+
+</div>
+
+</div>
+
+
+<!-- MAIN PAGE -->
+<div id="content" style="display:none;">
+
+
+<div class="clouds">
+☁️ ☁️ ☁️ ☁️
+</div>
+
+
+<div class="hearts">
+❤️ 💕 💗 💖
+</div>
+
+
+<h1>
+Happy Birthday My Love ❤️
+</h1>
+
+
+<div class="couple">
+🐰 💕 🐻
+</div>
+
+
+<div class="flowers">
+🌸 🌷 🌸 🌷
+</div>
+
+
+<h2>🎂 A Special Message For You</h2>
+
+
+<div class="letter">
+
+My Love ❤️
+
+<br><br>
+
+Happy Birthday to the most special person in my life.
+
+Today is not just your birthday, it is a day to celebrate the person who brings happiness, comfort and beautiful moments into my life.
+
+Thank you for being there, for making me smile, and for creating so many precious memories with me.
+
+I hope your life is always filled with happiness, success and endless love.
+
+You deserve all the beautiful things in this world.
+
+I am so lucky to have you. ❤️
+
+<br><br>
+
+With lots of love 💕
+
+</div>
+
+
+
+<h2>❓ Little Questions For You</h2>
+
+
+<div class="questions">
+
+<p>1. When did you start loving me? ❤️</p>
+
+<p>2. What is your favourite memory with me?</p>
+
+<p>3. What is the first thing you noticed about me?</p>
+
+<p>4. What makes you happiest?</p>
+
+<p>5. What is one dream you want us to complete together?</p>
+
+<p>6. What is your favourite thing about me?</p>
+
+<p>7. Which moment with me can you never forget?</p>
+
+<p>8. What nickname do you love the most?</p>
+
+<p>9. Where do you want to travel with me?</p>
+
+<p>10. How much do you love me? 💕</p>
+
+</div>
+
+
+
+<h2>🎥 Our Surprise Video</h2>
+
+<div class="video-box">
+
+<!-- Add video here later -->
+
+🎬 Your special video will be here ❤️
+
+</div>
+
+
+
+
+<h2>🎁 Final Surprise</h2>
+
+
+<div class="surprise">
+
+🎂✨🎉  
+<br>
+I Love You Forever ❤️
+
+</div>
+
+
+
+</div>
+
+
+
+<script>
+
+function unlock(){
+
+let pass=document.getElementById("password").value;
+
+
+if(pass=="01012023"){
+
+document.getElementById("lock").style.display="none";
+
+document.getElementById("content").style.display="block";
+
+}
+
+else{
+
+alert("Wrong Password 💔");
+
+}
+
+}
+
+</script>
+
 
 </body>
 </html>
