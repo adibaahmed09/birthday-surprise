@@ -1,129 +1,255 @@
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    background: linear-gradient(#ffd6e7, #fff0f6);
-    overflow-x: hidden;
-    color: #ff4f91;
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Poppins", sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:
+    radial-gradient(circle at 20% 20%, #fff7b8 0 3%, transparent 4%),
+    radial-gradient(circle at 80% 30%, #ffd6e7 0 4%, transparent 5%),
+    linear-gradient(135deg,#fff8f0,#ffdce9,#fffdf8);
+    color:#8b5268;
 }
 
 
-.password-page {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* soft printed pattern */
+
+.background{
+    min-height:100vh;
+    background-image:
+    radial-gradient(#ffffff 2px, transparent 2px),
+    radial-gradient(#ffd3df 2px, transparent 2px);
+    background-size:40px 40px;
+    background-position:0 0,20px 20px;
 }
 
 
-.box {
-    background: rgba(255,255,255,0.7);
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow: 0 0 25px pink;
+.page{
+    display:none;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
 }
 
 
-input {
-    padding: 12px;
-    border-radius: 20px;
-    border: 2px solid pink;
-    margin: 10px;
+.page.active{
+    display:flex;
 }
 
 
-button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    background: #ff69a6;
-    color: white;
-    font-size: 16px;
-}
+.card{
 
+    width:90%;
+    max-width:450px;
 
-h1 {
-    font-size: 40px;
-    text-shadow: 0 0 15px white;
-}
+    background:
+    rgba(255,255,255,0.75);
 
+    border-radius:35px;
 
-.clouds {
-    font-size: 50px;
-    animation: moveCloud 8s infinite alternate;
-}
+    padding:35px;
 
+    text-align:center;
 
-@keyframes moveCloud {
+    box-shadow:
+    0 15px 40px rgba(255,150,180,0.35);
 
-from {
-transform: translateX(-100px);
-}
+    backdrop-filter:blur(10px);
 
-to {
-transform: translateX(100px);
-}
+    animation:appear 1s ease;
 
 }
 
 
-.hearts {
-    font-size: 35px;
-    animation: float 3s infinite;
+@keyframes appear{
+
+from{
+opacity:0;
+transform:translateY(40px);
 }
 
-
-@keyframes float {
-
-50% {
-transform: translateY(-20px);
+to{
+opacity:1;
+transform:translateY(0);
 }
 
 }
 
 
-.couple {
-    font-size: 80px;
-    margin: 20px;
-}
 
+h1{
 
-.flowers {
-    font-size: 45px;
-}
+color:#d86b9b;
 
-
-.letter,
-.questions,
-.video-box {
-
-    background: rgba(255,255,255,0.8);
-    margin: 25px;
-    padding: 25px;
-    border-radius: 25px;
-    box-shadow: 0 0 20px #ffc1dd;
-}
-
-
-.letter {
-    line-height: 1.8;
-    font-size: 18px;
-}
-
-
-.surprise {
-
-    font-size: 45px;
-    animation: glow 2s infinite;
+text-shadow:
+0 0 10px #ffd1e2;
 
 }
 
 
-@keyframes glow {
 
-50% {
-text-shadow: 0 0 25px pink;
+button{
+
+background:
+linear-gradient(135deg,#f7a8c4,#f5d36a);
+
+border:none;
+
+padding:14px 28px;
+
+border-radius:30px;
+
+color:white;
+
+font-size:16px;
+
+margin:10px;
+
+cursor:pointer;
+
+box-shadow:0 8px 20px #f6bfd3;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+input{
+
+width:90%;
+
+padding:14px;
+
+border-radius:25px;
+
+border:2px solid #ffd0df;
+
+outline:none;
+
+margin:15px;
+
+text-align:center;
+
+font-size:16px;
+
+}
+
+
+
+/* photos */
+
+.photos{
+
+display:flex;
+
+gap:15px;
+
+justify-content:center;
+
+}
+
+
+.photos img{
+
+width:120px;
+
+height:150px;
+
+background:#fff;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px pink;
+
+}
+
+
+
+/* gift */
+
+.gift{
+
+font-size:100px;
+
+animation:shake 2s infinite;
+
+}
+
+
+@keyframes shake{
+
+0%,100%{
+transform:rotate(0);
+}
+
+25%{
+transform:rotate(10deg);
+}
+
+75%{
+transform:rotate(-10deg);
+}
+
+}
+
+
+
+.videoBox{
+
+height:220px;
+
+border-radius:25px;
+
+background:#fff0f5;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:20px;
+
+}
+
+
+
+/* floating hearts */
+
+body:before{
+
+content:"💕  ✨  🌸  💕  ✨";
+
+position:fixed;
+
+top:10%;
+
+left:10%;
+
+font-size:35px;
+
+animation:float 6s infinite;
+
+}
+
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-40px);
+
 }
 
 }
