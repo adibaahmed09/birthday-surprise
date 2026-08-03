@@ -448,3 +448,47 @@ body{
     background-size:120px 120px, 35px 35px, 50px 50px;
     background-position:center;
 }
+.cartoon-cloud img{
+    width:180px;
+    animation:cloudMove 18s linear infinite;
+}
+
+.cartoon-bee img{
+    width:60px;
+    animation:beeMove 8s infinite;
+}
+
+.teddy-couple img{
+    width:160px;
+    animation:bounce 3s infinite;
+}
+
+.love-couple img{
+    width:230px;
+    animation:float 4s infinite;
+}
+
+.cartoon-flower img{
+    width:90px;
+    animation:sway 3s infinite;
+}
+
+
+@keyframes beeMove{
+    0%{
+        transform:translate(-100px,20px);
+    }
+    50%{
+        transform:translate(50vw,-30px);
+    }
+    100%{
+        transform:translate(100vw,20px);
+    }
+}
+
+
+@keyframes float{
+    50%{
+        transform:translateY(-20px);
+    }
+}
