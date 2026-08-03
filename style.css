@@ -492,3 +492,37 @@ body{
         transform:translateY(-20px);
     }
 }
+.cartoon-cloud img{
+    width:180px;
+    animation: cloudMove 18s linear infinite;
+}
+
+.cartoon-bee img{
+    width:60px;
+    animation: beeMove 8s infinite;
+}
+
+.teddy-couple img{
+    width:150px;
+    animation: bounce 3s infinite;
+}
+
+.love-couple img{
+    width:220px;
+    animation: float 4s infinite;
+}
+
+.cartoon-flower img{
+    width:90px;
+    animation: sway 3s infinite;
+}
+
+@keyframes beeMove{
+    0%{transform:translateX(-100px);}
+    50%{transform:translateX(50vw);}
+    100%{transform:translateX(100vw);}
+}
+
+@keyframes float{
+    50%{transform:translateY(-20px);}
+}
